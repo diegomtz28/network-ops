@@ -1,35 +1,45 @@
-# network-ops
+# network-ops 🌐
+
+![Maintained](https://img.shields.io/badge/maintained-yes-brightgreen)
+![Domain](https://img.shields.io/badge/lab-apextech.local-blue)
+![ISP](https://img.shields.io/badge/ISP-1Gbps-orange)
+![Focus](https://img.shields.io/badge/focus-networking%20%7C%20cybersecurity-purple)
 
 Personal networking documentation — home network, home lab, and everything in between.
 
-This repo is a running record of how my network is built, configured, and maintained. Every time I set something up, change something, or troubleshoot something worth remembering, it goes here.
+Every time I build something, change something, or break something worth remembering — it ends up here. This is a live record of my network, not a textbook.
 
 ---
 
-## What's in Here
+## 📁 Docs
 
-| Document | Description |
-|----------|-------------|
-| [Deco XE75 Pro Mesh Setup](deco-xe75-pro-mesh-setup.md) | Full home mesh rebuild with TP-Link Deco XE75 Pro (3-pack) and 1GB ISP upgrade |
-
----
-
-## Lab Environment
-
-- **Domain:** apextech.local
-- **Hypervisor:** Proxmox VE on HP Z2450
-- **Edge:** TP-Link Deco XE75 Pro (3-pack, WiFi 6E)
-- **ISP:** 1GB service over DOCSIS 3.1
-- **Firewall:** pfSense (lab segmentation)
+| Project | What It Covers | Status |
+|---------|---------------|--------|
+| [Deco XE75 Pro Mesh Setup](deco-xe75-pro-mesh-setup.md) | 3-node WiFi 6E mesh + 1GB ISP upgrade | ✅ Complete |
 
 ---
 
-## Goals
+## 🖧 Lab Stack
 
-- Document every network change — no more "I think I set it up like this"
-- Build a reference I can actually use when something breaks at 2am
-- Keep a portfolio of real hands-on work for my IT/cybersecurity career path
+```
+apextech.local
+├── Edge        TP-Link Deco XE75 Pro (3-pack, WiFi 6E)
+├── ISP         1Gbps — DOCSIS 3.1
+├── Firewall    pfSense
+├── Hypervisor  Proxmox VE — HP Z2450
+├── DC01        Active Directory, DNS, DHCP
+├── FS01        File Server
+└── WS01        Domain-joined workstation
+```
 
 ---
 
-> Built and maintained by Diego Martinez
+## 🎯 What This Repo Is For
+
+- No more "I think I configured it like this" — everything is written down
+- Real runbooks I can actually use when something breaks
+- Portfolio of hands-on work backing up my IT + cybersecurity path
+
+---
+
+> **Diego Martinez** — building toward a career in cybersecurity, one lab at a time.
